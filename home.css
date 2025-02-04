@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* نوار ناوبری */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    color: white;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .menu li {
+    margin-left: 20px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* هدر */
+header.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header .slide {
+    display: none;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: left 1s ease-in-out;
+}
+
+header .slide.active {
+    display: block;
+    left: 0;
+}
+
+/* انیمیشن اسلاید */
+@keyframes slideMove {
+    0% {
+        left: 100%;
+    }
+    33% {
+        left: 0;
+    }
+    66% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+header .slide {
+    animation: slideMove 9s infinite;
+}
+
+/* بنر خوش‌آمدگویی */
+.hero {
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .btn-primary {
+    padding: 15px 30px;
+    background-color: #008000;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+.hero .btn-primary:hover {
+    background-color: #006400;
+}
+
