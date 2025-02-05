@@ -142,6 +142,7 @@ overflow: hidden;
     height: 100%;
     position: absolute;
     display: flex;
+   
     justify-content: center;
     align-items: center;
     color: white;
@@ -254,6 +255,117 @@ overflow: hidden;
     55% { opacity: 0; transform: translateX(-100%); }
     100% { opacity: 0; }
 }
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.about-image {
+    width: 45%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.about-image img:hover{
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-content, .about-image {
+        width: 100%;
+    }
+    
+    .about-image img {
+        margin-top: 20px;
+    }
+}
+.places {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+.places h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.places-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.place-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.place-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #444;
+}
+
+.place-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+
 
 
 
