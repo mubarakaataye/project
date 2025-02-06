@@ -569,6 +569,10 @@ overflow: hidden;
     justify-content: center;
     flex-wrap: wrap;
 }
+.weather-container:hover{
+    transform: scale(1.05);
+    
+}
 
 .weather-box {
     background: #fff;
@@ -584,9 +588,6 @@ overflow: hidden;
     height: 150px;
     border-radius: 10px;
     object-fit: cover;
-}
-.weather-box img:hover{
-    transform: 1.05;
 }
 
 .weather-box h3 {
