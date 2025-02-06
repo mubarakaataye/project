@@ -1,129 +1,111 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* نوار ناوبری */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 15px;
-    z-index: 100;
-}
-
-nav .logo {
-    font-size: 1.8rem;
-    color: white;
-}
-
-nav input[type="checkbox"] {
-    display: none;
-}
-
-nav .menu-icon {
-    display: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-}
-
-nav .menu {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-nav .menu li {
-    margin-left: 20px;
-}
-
-nav .menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* هدر */
-header.slider {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    background-color: #333;
-}
-
-header .slide {
-    display: none;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
     text-align: center;
-    padding-top: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #2c3e50;
     color: white;
-    font-size: 2.5rem;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.gallery h2 {
+    margin: 30px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-content {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.scroll-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.scroll-content img:hover {
+    transform: scale(1.1);
+}
+
+/* انیمیشن حرکت از راست به چپ */
+.right-to-left .scroll-content {
+    animation: scroll-right-to-left 10s linear infinite alternate;
+}
+
+@keyframes scroll-right-to-left {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* انیمیشن حرکت از چپ به راست */
+.left-to-right .scroll-content {
+    animation: scroll-left-to-right 10s linear infinite alternate;
+}
+
+@keyframes scroll-left-to-right {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+}
+.circular-container {
+    position: relative;
+    width: 300px; /* اندازه دایره */
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circular-container .scroll-content {
     position: absolute;
-    top: 0;
-    left: 100%;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: left 1s ease-in-out;
+    transform-origin: center;
+    animation: rotate-circle 10s linear infinite;
 }
 
-header .slide.active {
-    display: block;
-    left: 0;
+.circular-container img {
+    position: absolute;
+    width: 80px; /* اندازه تصاویر */
+    height: 80px;
+    border-radius: 50%;
 }
 
-/* انیمیشن اسلاید */
-@keyframes slideMove {
-    0% {
-        left: 100%;
-    }
-    33% {
-        left: 0;
-    }
-    66% {
-        left: -100%;
-    }
-    100% {
-        left: 100%;
-    }
-}
 
-header .slide {
-    animation: slideMove 9s infinite;
-}
+.circular-container img:nth-child(1) { transform: rotate(0deg) translate(120px) rotate(0deg); }
+.circular-container img:nth-child(2) { transform: rotate(45deg) translate(120px) rotate(-45deg); }
+.circular-container img:nth-child(3) { transform: rotate(90deg) translate(120px) rotate(-90deg); }
+.circular-container img:nth-child(4) { transform: rotate(135deg) translate(120px) rotate(-135deg); }
+.circular-container img:nth-child(5) { transform: rotate(180deg) translate(120px) rotate(-180deg); }
+.circular-container img:nth-child(6) { transform: rotate(225deg) translate(120px) rotate(-225deg); }
+.circular-container img:nth-child(7) { transform: rotate(270deg) translate(120px) rotate(-270deg); }
+.circular-container img:nth-child(8) { transform: rotate(315deg) translate(120px) rotate(-315deg); }
 
-/* بنر خوش‌آمدگویی */
-.hero {
-    background-color: #333;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+/* انیمیشن چرخش */
+@keyframes rotate-circle {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
-
-.hero .btn-primary {
-    padding: 15px 30px;
-    background-color: #008000;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 1.2rem;
-}
-
-.hero .btn-primary:hover {
-    background-color: #006400;
-}
-
