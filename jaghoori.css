@@ -154,7 +154,7 @@ overflow: hidden;
 
 /* ✅ تعیین تصاویر برای هر اسلاید */
 .slide:nth-child(1) { background-image: url('Screenshot_20250204-102317_Lite.jpg'); animation-delay: 0s; }
-.slide:nth-child(2) { background-image: url('Screenshot_20250204-102328_Lite.jpg'); animation-delay: 8s; }
+.slide:nth-child(2) { background-image: url('Screenshot_20250204-212038_Lite.jpg'); animation-delay: 8s; }
 .slide:nth-child(3) { background-image: url('Screenshot_20250204-102404_Lite.jpg'); animation-delay: 12s; }
 
 /* ✨ انیمیشن تغییر تصاویر */
@@ -636,6 +636,7 @@ overflow: hidden;
 }
 .geo-box:hover{
     transform: scale(1.05);
+    transition: 2s;
 }
 
 .geo-box img {
