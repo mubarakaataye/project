@@ -569,8 +569,9 @@ overflow: hidden;
     justify-content: center;
     flex-wrap: wrap;
 }
-.weather-container:hover{
+.weather-box:hover{
     transform: scale(1.05);
+    transition: 2s;
     
 }
 
@@ -632,6 +633,9 @@ overflow: hidden;
     width: 250px;
     text-align: center;
     padding: 15px;
+}
+.geo-box:hover{
+    transform: scale(1.05);
 }
 
 .geo-box img {
