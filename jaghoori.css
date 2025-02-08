@@ -719,6 +719,9 @@ overflow: hidden;
     color: #00aaff;
     font-weight: bold;
 }
+.footer-bottom span:hover{
+    cursor: pointer;
+}
 
 
 
