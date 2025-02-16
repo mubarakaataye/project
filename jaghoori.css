@@ -137,7 +137,7 @@ nav {
     justify-content: center;
     text-align: center;
     color: white;
-    animation: fadeIn 20s linear infinite alternate;
+    animation: fadeIn 15s linear infinite alternate;
 }
 
 .hero-content h1 {
