@@ -126,8 +126,6 @@ nav {
     }
 }
 
-
-
 .hero {
     background-image: url('Screenshot_20250204-102623_Lite.jpg'); /* عکس بنر */
     background-size: cover;
@@ -169,6 +167,7 @@ nav {
 @keyframes fadeIn {
     from {
         opacity: 0;
+        background-image: url('Screenshot_20250204-102623_Lite.jpg'); 
     }
     to {
         opacity: 1;
