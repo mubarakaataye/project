@@ -680,8 +680,7 @@ overflow: hidden;
     margin-bottom: 15px;
 }
 
-.footer p,
-.footer ul {
+.footer p,.footer ul {
     font-size: 1.1em;
     color: #ddd;
 }
@@ -702,10 +701,6 @@ overflow: hidden;
 
 .footer ul li a:hover {
     color: #00aaff;
-}
-
-.footer-map iframe {
-    border-radius: 5px;
 }
 
 .footer-bottom {

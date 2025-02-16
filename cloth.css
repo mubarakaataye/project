@@ -24,7 +24,8 @@ body {
 .scroll-container {
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
+    width: 95%;
+    margin: auto;
     height: 220px;
     position: relative;
     background-color: white;
@@ -57,8 +58,8 @@ body {
 }
 
 @keyframes scroll-right-to-left {
-    from { transform: translateX(20%); }
-    to { transform: translateX(-20%); }
+    from { transform: translateX(10%); }
+    to { transform: translateX(-10%); }
 }
 
 /* انیمیشن حرکت از چپ به راست */
@@ -67,8 +68,8 @@ body {
 }
 
 @keyframes scroll-left-to-right {
-    from { transform: translateX(-20%); }
-    to { transform: translateX(20%); }
+    from { transform: translateX(-10%); }
+    to { transform: translateX(10%); }
 }
 
 
