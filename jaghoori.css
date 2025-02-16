@@ -27,7 +27,7 @@ nav {
     margin: auto;
     border-radius: 8px;
     position: sticky;
-
+    box-shadow: 0 0 12px black;
 }
 
 .logo {
