@@ -148,6 +148,10 @@ nav {
         width: 90%;
         left: 5%;
     }
+    .categories{
+        gap: 10px;
+        margin: 20px 0;
+    }
 }
 
 .custom-header {
@@ -179,12 +183,7 @@ nav {
     gap: 30px;
     margin: 40px 0;
 }
-@media(max-width:480px){
-    .categories{
-        gap: 10px;
-        margin: 20px 0;
-    }
-}
+
 
 .category {
     background-color: #e74c3c;
