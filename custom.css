@@ -179,6 +179,12 @@ nav {
     gap: 30px;
     margin: 40px 0;
 }
+@media(max-width:480px){
+    .categories{
+        gap: 10px;
+       
+    }
+}
 
 .category {
     background-color: #e74c3c;
