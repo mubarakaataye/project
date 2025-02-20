@@ -71,6 +71,8 @@ body {
     from { transform: translateX(-10%); }
     to { transform: translateX(10%); }
 }
-
+.button{
+    background-color: #2c3e50;
+}
 
 
