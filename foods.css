@@ -96,12 +96,16 @@ h2 {
 }
 
 .button{
-    background-color: #edf2f7;
+    background-color: #c4d6e7;
     height: 65px;
     width: 180px;
     font-size: 18px;
     border-radius: 12px;
     border: 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+    margin-bottom: 20px;
 }
 .button a{
     text-decoration: none;
